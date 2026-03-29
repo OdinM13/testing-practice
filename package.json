@@ -1,0 +1,23 @@
+{
+  "name": "testing-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OdinM13/testing-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OdinM13/testing-practice/issues"
+  },
+  "homepage": "https://github.com/OdinM13/testing-practice#readme",
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
+}
