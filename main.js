@@ -19,8 +19,32 @@ export const calculator = {
 }
 
 export function caesarCipher (word, shift) {
-// charCodeAt()
-// fromCharCode()
+  const wordLength = word.length;
+  let codeArray = [];
+  for (let i = 0; i < word.length; i++) {
+    let codeAt = word.charCodeAt(i);
+    if (codeAt >= 65 && codeAt <= 90) {
+      let modifiedCode = codeAt + shift;
+      if (modifiedCode > 90) {
+        let correctedCode = modifiedCode - 26;
+        codeArray.push(correctedCode);
+      } else {
+        codeArray.push(modifiedCode);
+      }
+    } else if (codeAt >= 97 && codeAt <= 122) {
+      let modifiedCode = codeAt + shift;
+      if (modifiedCode > 122) {
+        let correctedCode = modifiedCode - 26;
+        codeArray.push(correctedCode);
+      } else {
+        codeArray.push(modifiedCode);
+      }
+    } else {
+      codeArray.push(codeAt);
+    }
+  }
+  const caesarWord = String.fromCharCode(...codeArray);
+  return caesarWord;
 }
 
 export function analyzeArray(arr) {

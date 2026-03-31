@@ -36,14 +36,17 @@ test('calculator divide by zero', () => {
 })
 
 test('caesarCipher Test 1', () => {
+  console.log('caesarCipher Test 1: ' + caesarCipher('xyz', 3)); 
   expect(caesarCipher('xyz', 3)).toBe('abc');
 })
 
 test('caesarCipher Test 2', () => {
+  console.log('caesarCipher Test 2: ' + caesarCipher('HeLLo', 3)); 
   expect(caesarCipher('HeLLo', 3)).toBe('KhOOr');
 })
 
 test('caesarCipher Test 3', () => {
+  console.log('caesarCipher Test 3: ' + caesarCipher('Hello, Wolrd!', 3)); 
   expect(caesarCipher('Hello, World!', 3)).toBe('Khoor, Zruog!');
 })
 
